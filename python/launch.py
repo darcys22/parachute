@@ -7,25 +7,52 @@ from selenium.webdriver.support import expected_conditions as EC
 import json
 import random
 
-# startx = 200
-# starty = 200
-# startz = 500
-# windspeed = 30
-# winddirection = 160
+from unpacked import x1
+
+def pack(obj):
+    mainbytesArray = []
+    if (len(obj) % 2):
+        obj.append([False,False])
+    byte = 0
+    for i in range(0,len(obj)):
+        if (i%2 ==0 and i>0):
+            mainbytesArray.append(format(byte,'x'));
+            byte = 0;
+
+        byte = byte << 2;
+        if(obj[i][0] and obj[i][1]):
+            byte += 3
+        if(obj[i][0] and not(obj[i][1])):
+            byte += 2;
+        if(not(obj[i][0]) and obj[i][1]):
+            byte += 1;
+    mainbytesArray.append(format(byte,'x'));
+    return ''.join(mainbytesArray)
+
+# packed ="555555555555555555555555555555555555599555555555555555555555555555555555555555555555555555556aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa5555555555555555555555555555555555555555556aaaa0123456789abcdfb2aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8"
+
+startx = 200
+starty = 200
+startz = 500
+windspeed = 30
+winddirection = 160
+
+# startx = random.randint(1, 3000)
+# starty = random.randint(1, 3000)
+# startz = random.randint(1, 3000)
+# windspeed= random.randint(1, 50)
+# winddirection= random.randint(1, 360)
+
 print("----Start----")
-startx = random.randint(1, 3000)
 print("Starting X: {} ".format(startx))
-starty = random.randint(1, 3000)
 print("Starting Y: {} ".format(starty))
-startz = random.randint(1, 3000)
 print("Starting Z: {} ".format(startz))
-windspeed= random.randint(1, 50)
 print("Starting Windspeed: {} ".format(windspeed))
-winddirection= random.randint(1, 360)
 print("Starting Wind Direction: {} ".format(winddirection))
 
 
-url = 'http://localhost:8080/?windSpeed={}&windDirection={}&height={}&startx={}&starty={}'.format(windspeed,winddirection,startz,startx,starty)
+
+url = 'http://localhost:8080/?windSpeed={}&windDirection={}&height={}&startx={}&starty={}&d=\'{}\''.format(windspeed,winddirection,startz,startx,starty,pack(x1))
 
 driver = webdriver.Firefox()
 driver.get(url)
@@ -44,7 +71,3 @@ finally:
 
 
 
-
-# Open URL in new browser window
-# import webbrowser
-# webbrowser.open_new(url) # opens in default browser
