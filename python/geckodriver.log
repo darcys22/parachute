@@ -121,3 +121,75 @@ ATTENTION: default value of option force_s3tc_enable overridden by environment.
 1532666492596	Marionette	WARN	TLS certificate errors will be ignored for this session
 ATTENTION: default value of option force_s3tc_enable overridden by environment.
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532668230368	geckodriver	INFO	geckodriver 0.21.0
+1532668230373	geckodriver	INFO	Listening on 127.0.0.1:47855
+1532668231375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L0lC6FFkR4ka"
+1532668233546	Marionette	INFO	Listening on port 39201
+1532668233593	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532668291141	geckodriver	INFO	geckodriver 0.21.0
+1532668291146	geckodriver	INFO	Listening on 127.0.0.1:56013
+1532668292147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sdekrRS54ADy"
+1532668294004	Marionette	INFO	Listening on port 34809
+1532668294091	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532668719762	geckodriver	INFO	geckodriver 0.21.0
+1532668719767	geckodriver	INFO	Listening on 127.0.0.1:44735
+1532668720768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.59lXKdepCcVT"
+1532668722963	Marionette	INFO	Listening on port 38671
+1532668722995	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[Parent 96513, Gecko_IOThread] WARNING: pipe error (50): Connection reset by peer: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532668747134	geckodriver	INFO	geckodriver 0.21.0
+1532668747138	geckodriver	INFO	Listening on 127.0.0.1:50305
+1532668748141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DY4sNodzmc2o"
+1532668749995	Marionette	INFO	Listening on port 37261
+1532668750075	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532669015554	geckodriver	INFO	geckodriver 0.21.0
+1532669015560	geckodriver	INFO	Listening on 127.0.0.1:43447
+1532669016558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hqvHmWpQvp7B"
+1532669020830	Marionette	INFO	Listening on port 45943
+1532669020996	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[Parent 98232, Gecko_IOThread] WARNING: pipe error (50): Connection reset by peer: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532669175531	geckodriver	INFO	geckodriver 0.21.0
+1532669175534	geckodriver	INFO	Listening on 127.0.0.1:40921
+1532669176537	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yf4DTvx7yGEV"
+1532669178811	Marionette	INFO	Listening on port 45057
+1532669178893	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+1532669224990	geckodriver	INFO	geckodriver 0.21.0
+1532669224998	geckodriver	INFO	Listening on 127.0.0.1:46351
+1532669225013	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8W0YBPsnPimc"
+1532669231421	Marionette	INFO	Listening on port 36083
+1532669231503	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 98986, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1532669249154	geckodriver	INFO	geckodriver 0.21.0
+1532669249160	geckodriver	INFO	Listening on 127.0.0.1:55839
+1532669250155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EfSS596NAzzz"
+1532669252904	Marionette	INFO	Listening on port 45729
+1532669253022	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532669349699	geckodriver	INFO	geckodriver 0.21.0
+1532669349707	geckodriver	INFO	Listening on 127.0.0.1:48641
+1532669350707	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4VQ5IeIYU2em"
+1532669353421	Marionette	INFO	Listening on port 36509
+1532669353438	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1532669399157	geckodriver	INFO	geckodriver 0.21.0
+1532669399165	geckodriver	INFO	Listening on 127.0.0.1:57553
+1532669400163	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6i07JDc6I7QW"
+1532669402722	Marionette	INFO	Listening on port 38235
+1532669402837	Marionette	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

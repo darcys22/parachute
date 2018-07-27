@@ -3,28 +3,17 @@ class Main extends Phaser.State {
     create() {
       /* Adding Map */
       this.map = game.add.sprite(0,0,'map');
-      /* Adding Para */
-      this.para = game.add.sprite(570,100,'parachute');
-      this.para.animations.add('fly');
-      this.para.animations.play('fly',4,true);
 
 
       this.rightToggleDepth = 0;
       this.leftToggleDepth = 0;
 
-      this.windStrength = 50;
-      this.windDirection = 90;
       this.fallrate = 8; //Meters a Second
       game.time.advancedTiming = true;
-      this.height = 1000;
-      this.maxheight = this.height;
-      this.heightText = game.add.text(16, 16, 'Height: ' + this.height + 'ft', { font: '16px Arial', fill: '#ffffff' }); 
 
       this.leftToggle = game.input.keyboard.addKey(Phaser.Keyboard.F);
       this.rightToggle = game.input.keyboard.addKey(Phaser.Keyboard.J);
 
-      game.physics.p2.enable(this.para,false);
-      this.para.body.angle = 90;
       this.velocity=150;
 
       var barConfig = {x: 200, y: 100, animationDuration: 1};
@@ -33,6 +22,23 @@ class Main extends Phaser.State {
       this.counter = 0;
       this.remote = true;
 
+      //Configurable Params
+      var url = new URL(window.location.href);
+      this.windStrength = parseInt(url.searchParams.get("windStrength")) || 50;
+      this.windDirection= parseInt(url.searchParams.get("windDirection")) || 90;
+      this.height = parseInt(url.searchParams.get("height")) || 1000;
+      this.startx = parseInt(url.searchParams.get("startx")) || 570;
+      this.starty = parseInt(url.searchParams.get("starty")) || 100;
+      
+      /* Adding Para */
+      this.para = game.add.sprite(this.startx,this.starty,'parachute');
+      game.physics.p2.enable(this.para,false);
+      this.para.animations.add('fly');
+      this.para.animations.play('fly',4,true);
+      this.para.body.angle = parseInt(url.searchParams.get("paraAngle")) || 90;
+
+      this.maxheight = this.height;
+      this.heightText = game.add.text(16, 16, 'Height: ' + this.height + 'ft', { font: '16px Arial', fill: '#ffffff' }); 
 
       this.d = [
         [false, true],
@@ -486,9 +492,6 @@ class Main extends Phaser.State {
         [true, false],
       ]
 
-      //var url = new URL(window.location.href);
-      //window.d = url.searchParams.get("d");
-      //console.log(window.d);
     }
 
     update() {
@@ -669,6 +672,7 @@ class Main extends Phaser.State {
       window.results.finalspeed = this.fallrate;
       window.results.finalx = this.para.body.x;
       window.results.finaly = this.para.body.y;
+      window.results.counterleft = this.d.length - this.counter;
 
       game.state.start('Landed');
     }
